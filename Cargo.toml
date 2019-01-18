@@ -1,9 +1,5 @@
-[package]
-name = "chip8-rs"
-version = "0.1.0"
-authors = ["Pietro Lorefice <pietro.lorefice@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-sdl2 = "0.32"
-rand = "0.6"
+[workspace]
+members = [
+    "chip8",
+    "chip8-sdl",
+]

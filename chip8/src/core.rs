@@ -1,89 +1,5 @@
-extern crate rand;
-extern crate sdl2;
-
-use sdl2::pixels::Color;
-use sdl2::rect::Rect;
-use sdl2::render::WindowCanvas;
-
-use std::thread;
-use std::time::Duration;
-
-const CLOCK_FREQ_HZ: u64 = 500;
-const VSYNC_FREQ_HZ: u64 = 60;
-
-struct Chip8 {
-    canvas: WindowCanvas,
-
-    sram: Memory,
-    vpu: VPU,
-
-    regs: [u8; 16],
-    ir: u16,
-    pc: u16,
-
-    stack: [u16; 16],
-    sp: u8,
-
-    dt: Timer,
-    st: Timer,
-}
-
-struct Memory(Vec<u8>);
-
-impl Memory {
-    fn new(sz: u16) -> Memory {
-        Memory(vec![0; sz as usize])
-    }
-
-    fn load(&mut self, from: u16, data: &[u8]) {
-        for (i, d) in data.iter().enumerate() {
-            self.write(from + i as u16, *d);
-        }
-    }
-
-    fn read(&self, addr: u16) -> u8 {
-        self.0[addr as usize]
-    }
-
-    fn write(&mut self, addr: u16, val: u8) {
-        self.0[addr as usize] = val;
-    }
-}
-
-struct VPU {
-    data: Vec<bool>,
-    w: usize,
-    h: usize,
-}
-
-impl VPU {
-    fn new(w: usize, h: usize) -> VPU {
-        VPU {
-            data: vec![false; w * h],
-            w,
-            h,
-        }
-    }
-
-    fn clear(&mut self) {
-        self.data = vec![false; self.w * self.h]
-    }
-
-    fn idx(&self, c: (u8, u8)) -> usize {
-        (c.1 as usize % self.h) * self.w + (c.0 as usize % self.w)
-    }
-
-    fn read(&self, c: (u8, u8)) -> bool {
-        self.data[self.idx(c)]
-    }
-
-    fn write(&mut self, c: (u8, u8), v: bool) -> bool {
-        let i = self.idx(c);
-
-        self.data[i] ^= v;
-        !self.data[i]
-    }
-}
+use super::memory::Memory;
+use super::periph::{Timer, VPU};
 
 struct Instruction(u16);
 
@@ -108,52 +24,43 @@ impl Instruction {
     }
 }
 
-#[derive(Default)]
-struct Timer {
-    counter: u8,
-}
+pub struct Chip8 {
+    // Memories
+    sram: Memory,
+    vpu: VPU,
 
-impl Timer {
-    fn value(&self) -> u8 {
-        self.counter
-    }
+    // CPU registers and stack
+    regs: [u8; 16],
+    stack: [u16; 16],
+    ir: u16,
+    pc: u16,
+    sp: u8,
 
-    fn reload(&mut self, v: u8) {
-        self.counter = v;
-    }
-
-    fn tick(&mut self) {
-        if self.is_active() {
-            self.counter -= 1;
-        }
-    }
-
-    fn is_active(&self) -> bool {
-        self.counter != 0
-    }
+    // Timers
+    dt: Timer,
+    st: Timer,
 }
 
 impl Chip8 {
-    fn new(canvas: WindowCanvas, rom: &[u8]) -> Chip8 {
-        let mut c = Chip8 {
-            canvas: canvas,
-
+    pub fn new() -> Chip8 {
+        Chip8 {
             sram: Memory::new(0x1000),
             vpu: VPU::new(64, 32),
 
             regs: [0x0; 16],
+            stack: [0x0; 16],
             pc: 0x200,
             ir: 0x0,
-
-            stack: [0x0; 16],
             sp: 0x0,
 
             dt: Timer::default(),
             st: Timer::default(),
-        };
+        }
+    }
 
+    pub fn load(&mut self, rom: &[u8]) {
         // Digit sprites reside at 0x000
-        c.sram.load(
+        self.sram.load(
             0x0,
             &[
                 0xF0, 0x90, 0x90, 0x90, 0xF0, 0x20, 0x60, 0x20, 0x20, 0x70, 0xF0, 0x10, 0xF0, 0x80,
@@ -165,20 +72,20 @@ impl Chip8 {
             ],
         );
 
-        // Program/data memory starts at 0x200
-        c.sram.load(0x200, &rom[..]);
-
-        c
+        // Program/data start at 0x200
+        self.sram.load(0x200, &rom[..]);
     }
 
-    fn fetch(&mut self) -> Instruction {
-        let high = self.sram.read(self.pc) as u16;
-        let low = self.sram.read(self.pc + 1) as u16;
-        self.pc += 2;
-        Instruction((high << 8) | low)
+    pub fn vpu(&self) -> &VPU {
+        &self.vpu
     }
 
-    fn step(&mut self) {
+    pub fn tick(&mut self) {
+        self.dt.tick();
+        self.st.tick();
+    }
+
+    pub fn step(&mut self) {
         let instr = self.fetch();
 
         let x = instr.reg_h();
@@ -298,57 +205,10 @@ impl Chip8 {
         }
     }
 
-    fn run(&mut self) -> ! {
-        let instr_per_tick = CLOCK_FREQ_HZ / VSYNC_FREQ_HZ;
-
-        loop {
-            for _ in 0..instr_per_tick {
-                self.step();
-            }
-
-            self.dt.tick();
-            self.st.tick();
-
-            self.draw();
-
-            thread::sleep(Duration::from_micros(1_000_000 / VSYNC_FREQ_HZ));
-        }
+    fn fetch(&mut self) -> Instruction {
+        let high = self.sram.read(self.pc) as u16;
+        let low = self.sram.read(self.pc + 1) as u16;
+        self.pc += 2;
+        Instruction((high << 8) | low)
     }
-
-    fn draw(&mut self) {
-        self.canvas.set_draw_color(Color::RGB(0, 0, 0));
-        self.canvas.clear();
-
-        for y in 0..self.vpu.h {
-            for x in 0..self.vpu.w {
-                if self.vpu.read((x as u8, y as u8)) {
-                    self.canvas.set_draw_color(Color::RGB(255, 255, 255));
-                } else {
-                    self.canvas.set_draw_color(Color::RGB(0, 0, 0));
-                }
-
-                self.canvas
-                    .fill_rect(Rect::new(x as i32 * 10, y as i32 * 10, 10, 10))
-                    .unwrap();
-            }
-        }
-        self.canvas.present();
-    }
-}
-
-fn main() {
-    let rom = std::fs::read(std::env::args().nth(1).unwrap()).unwrap();
-
-    let ctx = sdl2::init().unwrap();
-    let video = ctx.video().unwrap();
-
-    let win = video
-        .window("CHIP-8", 640, 320)
-        .position_centered()
-        .build()
-        .unwrap();
-
-    let canvas = win.into_canvas().build().unwrap();
-
-    Chip8::new(canvas, &rom[..]).run();
 }

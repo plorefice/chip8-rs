@@ -1,0 +1,8 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["Pietro Lorefice <pietro.lorefice@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"

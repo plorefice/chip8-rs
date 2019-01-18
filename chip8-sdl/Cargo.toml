@@ -1,0 +1,9 @@
+[package]
+name = "chip8-sdl"
+version = "0.1.0"
+authors = ["Pietro Lorefice <pietro.lorefice@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chip8 = { path = "../chip8" }
+sdl2 = "0.32"
