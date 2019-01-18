@@ -58,6 +58,12 @@ impl Chip8 {
         }
     }
 
+    pub fn with_rom(rom: &[u8]) -> Chip8 {
+        let mut c = Chip8::new();
+        c.load(rom);
+        c
+    }
+
     pub fn load(&mut self, rom: &[u8]) {
         // Digit sprites reside at 0x000
         self.sram.load(

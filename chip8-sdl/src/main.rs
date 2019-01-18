@@ -12,30 +12,41 @@ use chip8::core::Chip8;
 
 const CLOCK_FREQ_HZ: u64 = 500;
 const VSYNC_FREQ_HZ: u64 = 60;
+const INSTR_PER_TICK: u64 = CLOCK_FREQ_HZ / VSYNC_FREQ_HZ;
 
 fn main() {
-    let rom = std::fs::read(std::env::args().nth(1).unwrap()).unwrap();
+    let fname = match std::env::args().nth(1) {
+        Some(fname) => fname,
+        None => {
+            println!("USAGE: chip8-sdl ROM-FILE");
+            std::process::exit(1);
+        }
+    };
 
-    let ctx = sdl2::init().unwrap();
-    let video = ctx.video().unwrap();
+    let rom = match std::fs::read(&fname) {
+        Ok(b) => b,
+        Err(e) => {
+            println!("could not open {}: {}", &fname, e);
+            std::process::exit(1);
+        }
+    };
 
-    let win = video
+    let ctx = sdl2::init().expect("could not init SDL2");
+    let video = ctx.video().expect("could not retrieve video subsystem");
+
+    let mut canvas = video
         .window("CHIP-8", 640, 320)
         .position_centered()
         .build()
-        .unwrap();
+        .expect("could not create window")
+        .into_canvas()
+        .build()
+        .expect("could not create canvas");
 
-    let mut canvas = win.into_canvas().build().unwrap();
-
-    let mut cpu = Chip8::new();
-    cpu.load(&rom[..]);
-
-    let instr_per_tick = CLOCK_FREQ_HZ / VSYNC_FREQ_HZ;
+    let mut cpu = Chip8::with_rom(&rom[..]);
 
     loop {
-        for _ in 0..instr_per_tick {
-            cpu.step();
-        }
+        (0..INSTR_PER_TICK).for_each(|_| cpu.step());
         cpu.tick();
 
         render(&mut canvas, &mut cpu);
