@@ -23,6 +23,25 @@ impl Timer {
     }
 }
 
+pub struct Keypad {
+    state: [bool; 16],
+}
+
+impl Keypad {
+    pub fn new() -> Keypad {
+        Keypad { state: [false; 16] }
+    }
+
+    pub fn set_state(&mut self, key: u8, pressed: bool) {
+        assert!(key < 16);
+        self.state[key as usize] = pressed;
+    }
+
+    pub fn get_state(&self, key: u8) -> bool {
+        self.state[key as usize]
+    }
+}
+
 pub struct VPU {
     data: Vec<bool>,
     w: usize,

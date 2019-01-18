@@ -1,5 +1,5 @@
 use super::memory::Memory;
-use super::periph::{Timer, VPU};
+use super::periph::{Keypad, Timer, VPU};
 
 struct Instruction(u16);
 
@@ -39,6 +39,10 @@ pub struct Chip8 {
     // Timers
     dt: Timer,
     st: Timer,
+
+    // Input
+    keypad: Keypad,
+    stall: bool,
 }
 
 impl Chip8 {
@@ -55,6 +59,9 @@ impl Chip8 {
 
             dt: Timer::default(),
             st: Timer::default(),
+
+            keypad: Keypad::new(),
+            stall: false,
         }
     }
 
@@ -86,12 +93,20 @@ impl Chip8 {
         &self.vpu
     }
 
+    pub fn keypad_mut(&mut self) -> &mut Keypad {
+        &mut self.keypad
+    }
+
     pub fn tick(&mut self) {
         self.dt.tick();
         self.st.tick();
     }
 
     pub fn step(&mut self) {
+        if self.stall {
+            return;
+        }
+
         let instr = self.fetch();
 
         let x = instr.reg_h();
@@ -182,10 +197,32 @@ impl Chip8 {
                     }
                 }
             }
-            0xE => (),
+            0xE => match instr.imm8() {
+                0x9E => {
+                    if self.keypad.get_state(self.regs[x]) {
+                        self.pc += 2;
+                    }
+                }
+                0xA1 => {
+                    if !self.keypad.get_state(self.regs[x]) {
+                        self.pc += 2;
+                    }
+                }
+                _ => unreachable!(),
+            },
             0xF => match instr.imm8() {
                 0x07 => self.regs[x] = self.dt.value(),
-                0x0A => (),
+                0x0A => {
+                    self.stall = true;
+
+                    for i in 0u8..16 {
+                        if self.keypad.get_state(i) {
+                            self.regs[x] = i;
+                            self.stall = false;
+                            break;
+                        }
+                    }
+                }
                 0x15 => self.dt.reload(self.regs[x]),
                 0x18 => self.st.reload(self.regs[x]),
                 0x1E => self.ir += self.regs[x] as u16,
