@@ -96,7 +96,7 @@ fn render(canvas: &mut WindowCanvas, cpu: &mut Chip8) {
 
     for y in 0..vpu.size().1 {
         for x in 0..vpu.size().0 {
-            if vpu.read((x as u8, y as u8)) {
+            if vpu.read((x as u16, y as u16)) {
                 canvas.set_draw_color(Color::RGB(255, 255, 255));
             } else {
                 canvas.set_draw_color(Color::RGB(0, 0, 0));

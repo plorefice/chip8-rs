@@ -25,20 +25,32 @@ impl Timer {
 
 pub struct Keypad {
     state: [bool; 16],
+    changed: bool,
 }
 
 impl Keypad {
     pub fn new() -> Keypad {
-        Keypad { state: [false; 16] }
+        Keypad {
+            state: [false; 16],
+            changed: false,
+        }
     }
 
     pub fn set_state(&mut self, key: u8, pressed: bool) {
-        assert!(key < 16);
+        if self.state[key as usize] != pressed {
+            self.changed = true;
+        }
         self.state[key as usize] = pressed;
     }
 
     pub fn get_state(&self, key: u8) -> bool {
         self.state[key as usize]
+    }
+
+    pub fn has_changed(&mut self) -> bool {
+        let changed = self.changed;
+        self.changed = false;
+        changed
     }
 }
 
@@ -69,18 +81,18 @@ impl VPU {
         self.data = vec![false; self.w * self.h]
     }
 
-    pub fn read(&self, c: (u8, u8)) -> bool {
+    pub fn read(&self, c: (u16, u16)) -> bool {
         self.data[self.idx(c)]
     }
 
-    pub fn write(&mut self, c: (u8, u8), v: bool) -> bool {
+    pub fn write(&mut self, c: (u16, u16), v: bool) -> bool {
         let i = self.idx(c);
-
+        let r = self.data[i] && v;
         self.data[i] ^= v;
-        !self.data[i]
+        r
     }
 
-    fn idx(&self, c: (u8, u8)) -> usize {
+    fn idx(&self, c: (u16, u16)) -> usize {
         (c.1 as usize % self.h) * self.w + (c.0 as usize % self.w)
     }
 }

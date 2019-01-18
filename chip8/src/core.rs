@@ -42,7 +42,6 @@ pub struct Chip8 {
 
     // Input
     keypad: Keypad,
-    stall: bool,
 }
 
 impl Chip8 {
@@ -61,7 +60,6 @@ impl Chip8 {
             st: Timer::default(),
 
             keypad: Keypad::new(),
-            stall: false,
         }
     }
 
@@ -103,37 +101,37 @@ impl Chip8 {
     }
 
     pub fn step(&mut self) {
-        if self.stall {
-            return;
-        }
-
         let instr = self.fetch();
 
+        let opcode = instr.opcode();
         let x = instr.reg_h();
         let y = instr.reg_l();
+        let n = instr.imm4();
+        let kk = instr.imm8();
+        let nnn = instr.addr();
 
-        match instr.opcode() {
-            0x0 => match instr.imm8() {
+        match opcode {
+            0x0 => match kk {
                 0xE0 => self.vpu.clear(),
                 0xEE => {
                     self.pc = self.stack[self.sp as usize];
                     self.sp -= 1;
                 }
-                _ => unreachable!(),
+                _ => {}
             },
-            0x1 => self.pc = instr.addr(),
+            0x1 => self.pc = nnn,
             0x2 => {
                 self.sp += 1;
                 self.stack[self.sp as usize] = self.pc;
-                self.pc = instr.addr();
+                self.pc = nnn;
             }
             0x3 => {
-                if self.regs[x] == instr.imm8() {
+                if self.regs[x] == kk {
                     self.pc += 2;
                 }
             }
             0x4 => {
-                if self.regs[x] != instr.imm8() {
+                if self.regs[x] != kk {
                     self.pc += 2;
                 }
             }
@@ -142,9 +140,9 @@ impl Chip8 {
                     self.pc += 2;
                 }
             }
-            0x6 => self.regs[x] = instr.imm8(),
-            0x7 => self.regs[x] = self.regs[x].wrapping_add(instr.imm8()),
-            0x8 => match instr.imm4() {
+            0x6 => self.regs[x] = kk,
+            0x7 => self.regs[x] = self.regs[x].wrapping_add(kk),
+            0x8 => match n {
                 0x0 => self.regs[x] = self.regs[y],
                 0x1 => self.regs[x] |= self.regs[y],
                 0x2 => self.regs[x] &= self.regs[y],
@@ -155,7 +153,7 @@ impl Chip8 {
                     self.regs[0xF] = (a >> 8) as u8;
                 }
                 0x5 => {
-                    self.regs[0xF] = if self.regs[y] > self.regs[x] { 0 } else { 1 };
+                    self.regs[0xF] = if self.regs[x] > self.regs[y] { 1 } else { 0 };
                     self.regs[x] = self.regs[x].wrapping_sub(self.regs[y]);
                 }
                 0x6 => {
@@ -163,31 +161,34 @@ impl Chip8 {
                     self.regs[x] >>= 1;
                 }
                 0x7 => {
-                    self.regs[0xF] = if self.regs[x] > self.regs[y] { 0 } else { 1 };
+                    self.regs[0xF] = if self.regs[y] > self.regs[x] { 1 } else { 0 };
                     self.regs[x] = self.regs[y].wrapping_sub(self.regs[x]);
                 }
                 0xE => {
-                    self.regs[0xF] = self.regs[x] >> 7;
+                    self.regs[0xF] = (self.regs[x] >> 7) & 0x1;
                     self.regs[x] <<= 1;
                 }
                 _ => unreachable!(),
             },
-            0x9 => {
-                if self.regs[x] != self.regs[y] {
-                    self.pc += 2;
+            0x9 => match n {
+                0x0 => {
+                    if self.regs[x] != self.regs[y] {
+                        self.pc += 2;
+                    }
                 }
-            }
-            0xA => self.ir = instr.addr(),
-            0xB => self.pc = instr.addr() + self.regs[0] as u16,
-            0xC => self.regs[x] = rand::random::<u8>() & instr.imm8(),
+                _ => unreachable!(),
+            },
+            0xA => self.ir = nnn,
+            0xB => self.pc = nnn + self.regs[0] as u16,
+            0xC => self.regs[x] = rand::random::<u8>() & kk,
             0xD => {
-                let x = self.regs[x];
-                let y = self.regs[y];
+                let x = self.regs[x] as u16;
+                let y = self.regs[y] as u16;
 
                 self.regs[0xF] = 0;
 
-                for i in 0..instr.imm4() {
-                    let b = self.sram.read(self.ir + i as u16);
+                for i in 0..n as u16 {
+                    let b = self.sram.read(self.ir + i);
 
                     for j in 0..8 {
                         let px = (b & (1 << j)) != 0;
@@ -197,7 +198,7 @@ impl Chip8 {
                     }
                 }
             }
-            0xE => match instr.imm8() {
+            0xE => match kk {
                 0x9E => {
                     if self.keypad.get_state(self.regs[x]) {
                         self.pc += 2;
@@ -210,22 +211,27 @@ impl Chip8 {
                 }
                 _ => unreachable!(),
             },
-            0xF => match instr.imm8() {
+            0xF => match kk {
                 0x07 => self.regs[x] = self.dt.value(),
                 0x0A => {
-                    self.stall = true;
+                    self.pc -= 2;
 
-                    for i in 0u8..16 {
-                        if self.keypad.get_state(i) {
-                            self.regs[x] = i;
-                            self.stall = false;
-                            break;
+                    if self.keypad.has_changed() {
+                        for i in 0u8..16 {
+                            if self.keypad.get_state(i) {
+                                self.regs[x] = i;
+                                self.pc += 2;
+                                break;
+                            }
                         }
                     }
                 }
                 0x15 => self.dt.reload(self.regs[x]),
                 0x18 => self.st.reload(self.regs[x]),
-                0x1E => self.ir += self.regs[x] as u16,
+                0x1E => {
+                    self.ir += self.regs[x] as u16;
+                    self.regs[0xF] = if self.ir > 0xFFF { 1 } else { 0 };
+                }
                 0x29 => self.ir = self.regs[x] as u16 * 5,
                 0x33 => {
                     self.sram.write(self.ir + 0, self.regs[x] / 100);
@@ -236,11 +242,13 @@ impl Chip8 {
                     for i in 0..x + 1 {
                         self.sram.write(self.ir + i as u16, self.regs[i]);
                     }
+                    self.ir += (x + 1) as u16;
                 }
                 0x65 => {
                     for i in 0..x + 1 {
                         self.regs[i] = self.sram.read(self.ir + i as u16);
                     }
+                    self.ir += (x + 1) as u16;
                 }
                 _ => unreachable!(),
             },
