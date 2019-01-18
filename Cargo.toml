@@ -5,3 +5,5 @@ authors = ["Pietro Lorefice <pietro.lorefice@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+sdl2 = "0.32"
+rand = "0.6"
