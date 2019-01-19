@@ -44,8 +44,8 @@ pub struct Chip8 {
     keypad: Keypad,
 }
 
-impl Chip8 {
-    pub fn new() -> Chip8 {
+impl Default for Chip8 {
+    fn default() -> Chip8 {
         Chip8 {
             sram: Memory::new(0x1000),
             vpu: VPU::new(64, 32),
@@ -59,8 +59,14 @@ impl Chip8 {
             dt: Timer::default(),
             st: Timer::default(),
 
-            keypad: Keypad::new(),
+            keypad: Keypad::default(),
         }
+    }
+}
+
+impl Chip8 {
+    pub fn new() -> Chip8 {
+        Chip8::default()
     }
 
     pub fn with_rom(rom: &[u8]) -> Chip8 {
@@ -148,7 +154,7 @@ impl Chip8 {
                 0x2 => self.regs[x] &= self.regs[y],
                 0x3 => self.regs[x] ^= self.regs[y],
                 0x4 => {
-                    let a = self.regs[x] as u16 + self.regs[y] as u16;
+                    let a = u16::from(self.regs[x]) + u16::from(self.regs[y]);
                     self.regs[x] = (a & 0xFF) as u8;
                     self.regs[0xF] = (a >> 8) as u8;
                 }
@@ -179,15 +185,15 @@ impl Chip8 {
                 _ => unreachable!(),
             },
             0xA => self.ir = nnn,
-            0xB => self.pc = nnn + self.regs[0] as u16,
+            0xB => self.pc = nnn + u16::from(self.regs[0]),
             0xC => self.regs[x] = rand::random::<u8>() & kk,
             0xD => {
-                let x = self.regs[x] as u16;
-                let y = self.regs[y] as u16;
+                let x = u16::from(self.regs[x]);
+                let y = u16::from(self.regs[y]);
 
                 self.regs[0xF] = 0;
 
-                for i in 0..n as u16 {
+                for i in 0..u16::from(n) {
                     let b = self.sram.read(self.ir + i);
 
                     for j in 0..8 {
@@ -229,23 +235,23 @@ impl Chip8 {
                 0x15 => self.dt.reload(self.regs[x]),
                 0x18 => self.st.reload(self.regs[x]),
                 0x1E => {
-                    self.ir += self.regs[x] as u16;
+                    self.ir += u16::from(self.regs[x]);
                     self.regs[0xF] = if self.ir > 0xFFF { 1 } else { 0 };
                 }
-                0x29 => self.ir = self.regs[x] as u16 * 5,
+                0x29 => self.ir = u16::from(self.regs[x]) * 5,
                 0x33 => {
-                    self.sram.write(self.ir + 0, self.regs[x] / 100);
+                    self.sram.write(self.ir, self.regs[x] / 100);
                     self.sram.write(self.ir + 1, (self.regs[x] % 100) / 10);
                     self.sram.write(self.ir + 2, self.regs[x] % 10);
                 }
                 0x55 => {
-                    for i in 0..x + 1 {
+                    for i in 0..=x {
                         self.sram.write(self.ir + i as u16, self.regs[i]);
                     }
                     self.ir += (x + 1) as u16;
                 }
                 0x65 => {
-                    for i in 0..x + 1 {
+                    for i in 0..=x {
                         self.regs[i] = self.sram.read(self.ir + i as u16);
                     }
                     self.ir += (x + 1) as u16;
@@ -257,8 +263,8 @@ impl Chip8 {
     }
 
     fn fetch(&mut self) -> Instruction {
-        let high = self.sram.read(self.pc) as u16;
-        let low = self.sram.read(self.pc + 1) as u16;
+        let high = u16::from(self.sram.read(self.pc));
+        let low = u16::from(self.sram.read(self.pc + 1));
         self.pc += 2;
         Instruction((high << 8) | low)
     }

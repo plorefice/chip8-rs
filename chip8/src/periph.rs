@@ -23,19 +23,13 @@ impl Timer {
     }
 }
 
+#[derive(Default)]
 pub struct Keypad {
     state: [bool; 16],
     changed: bool,
 }
 
 impl Keypad {
-    pub fn new() -> Keypad {
-        Keypad {
-            state: [false; 16],
-            changed: false,
-        }
-    }
-
     pub fn set_state(&mut self, key: u8, pressed: bool) {
         if self.state[key as usize] != pressed {
             self.changed = true;
