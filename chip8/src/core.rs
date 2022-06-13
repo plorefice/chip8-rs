@@ -90,7 +90,7 @@ impl Chip8 {
         );
 
         // Program/data start at 0x200
-        self.sram.load(0x200, &rom[..]);
+        self.sram.load(0x200, rom);
     }
 
     pub fn vpu(&self) -> &VPU {
