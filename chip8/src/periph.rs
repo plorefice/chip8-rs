@@ -80,6 +80,9 @@ impl VPU {
     }
 
     pub fn write(&mut self, c: (u16, u16), v: bool) -> bool {
+        if c.0 >= self.w as u16 || c.1 >= self.h as u16 {
+            return false;
+        }
         let i = self.idx(c);
         let r = self.data[i] && v;
         self.data[i] ^= v;

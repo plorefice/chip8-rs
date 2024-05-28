@@ -150,9 +150,18 @@ impl Chip8 {
             0x7 => self.regs[x] = self.regs[x].wrapping_add(kk),
             0x8 => match n {
                 0x0 => self.regs[x] = self.regs[y],
-                0x1 => self.regs[x] |= self.regs[y],
-                0x2 => self.regs[x] &= self.regs[y],
-                0x3 => self.regs[x] ^= self.regs[y],
+                0x1 => {
+                    self.regs[x] |= self.regs[y];
+                    self.regs[0xF] = 0;
+                }
+                0x2 => {
+                    self.regs[x] &= self.regs[y];
+                    self.regs[0xF] = 0;
+                }
+                0x3 => {
+                    self.regs[x] ^= self.regs[y];
+                    self.regs[0xF] = 0;
+                }
                 0x4 => {
                     let a = u16::from(self.regs[x]) + u16::from(self.regs[y]);
                     self.regs[x] = (a & 0xFF) as u8;
@@ -164,8 +173,8 @@ impl Chip8 {
                     self.regs[0xF] = vf;
                 }
                 0x6 => {
-                    let vf = self.regs[x] & 0x1;
-                    self.regs[x] >>= 1;
+                    let vf = self.regs[y] & 0x1;
+                    self.regs[x] = self.regs[y] >> 1;
                     self.regs[0xF] = vf;
                 }
                 0x7 => {
@@ -174,8 +183,8 @@ impl Chip8 {
                     self.regs[0xF] = vf;
                 }
                 0xE => {
-                    let vf = (self.regs[x] >> 7) & 0x1;
-                    self.regs[x] <<= 1;
+                    let vf = (self.regs[y] >> 7) & 0x1;
+                    self.regs[x] = self.regs[y] << 1;
                     self.regs[0xF] = vf;
                 }
                 _ => unreachable!(),
@@ -192,8 +201,8 @@ impl Chip8 {
             0xB => self.pc = nnn + u16::from(self.regs[0]),
             0xC => self.regs[x] = rand::random::<u8>() & kk,
             0xD => {
-                let x = u16::from(self.regs[x]);
-                let y = u16::from(self.regs[y]);
+                let x = u16::from(self.regs[x]) % 0x40;
+                let y = u16::from(self.regs[y]) % 0x20;
 
                 self.regs[0xF] = 0;
 
