@@ -159,20 +159,24 @@ impl Chip8 {
                     self.regs[0xF] = (a >> 8) as u8;
                 }
                 0x5 => {
-                    self.regs[0xF] = if self.regs[x] > self.regs[y] { 1 } else { 0 };
+                    let vf = if self.regs[x] >= self.regs[y] { 1 } else { 0 };
                     self.regs[x] = self.regs[x].wrapping_sub(self.regs[y]);
+                    self.regs[0xF] = vf;
                 }
                 0x6 => {
-                    self.regs[0xF] = self.regs[x] & 0x1;
+                    let vf = self.regs[x] & 0x1;
                     self.regs[x] >>= 1;
+                    self.regs[0xF] = vf;
                 }
                 0x7 => {
-                    self.regs[0xF] = if self.regs[y] > self.regs[x] { 1 } else { 0 };
+                    let vf = if self.regs[y] >= self.regs[x] { 1 } else { 0 };
                     self.regs[x] = self.regs[y].wrapping_sub(self.regs[x]);
+                    self.regs[0xF] = vf;
                 }
                 0xE => {
-                    self.regs[0xF] = (self.regs[x] >> 7) & 0x1;
+                    let vf = (self.regs[x] >> 7) & 0x1;
                     self.regs[x] <<= 1;
+                    self.regs[0xF] = vf;
                 }
                 _ => unreachable!(),
             },
