@@ -1,3 +1,5 @@
+use rand::{rngs::SmallRng, Rng, SeedableRng};
+
 use super::memory::Memory;
 use super::periph::{Keypad, Timer, VPU};
 
@@ -42,6 +44,9 @@ pub struct Chip8 {
 
     // Input
     keypad: Keypad,
+
+    // RNG
+    rng: SmallRng,
 }
 
 impl Default for Chip8 {
@@ -60,6 +65,8 @@ impl Default for Chip8 {
             st: Timer::default(),
 
             keypad: Keypad::default(),
+
+            rng: SmallRng::seed_from_u64(0),
         }
     }
 }
@@ -199,7 +206,7 @@ impl Chip8 {
             },
             0xA => self.ir = nnn,
             0xB => self.pc = nnn + u16::from(self.regs[0]),
-            0xC => self.regs[x] = rand::random::<u8>() & kk,
+            0xC => self.regs[x] = self.rng.gen::<u8>() & kk,
             0xD => {
                 let x = u16::from(self.regs[x]) % 0x40;
                 let y = u16::from(self.regs[y]) % 0x20;

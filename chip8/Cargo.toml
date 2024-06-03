@@ -5,4 +5,4 @@ authors = ["Pietro Lorefice <pietro.lorefice@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-rand = "0.8"
+rand = { version = "0.8", default-features = false, features = ["small_rng"] }

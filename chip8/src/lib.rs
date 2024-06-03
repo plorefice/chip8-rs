@@ -1,3 +1,7 @@
+#![no_std]
+
+extern crate alloc;
+
 extern crate rand;
 
 pub mod core;

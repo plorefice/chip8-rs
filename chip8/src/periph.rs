@@ -1,3 +1,5 @@
+use alloc::vec::Vec;
+
 #[derive(Default)]
 pub struct Timer {
     counter: u8,
@@ -57,7 +59,7 @@ pub struct VPU {
 impl VPU {
     pub fn new(w: usize, h: usize) -> VPU {
         VPU {
-            data: vec![false; w * h],
+            data: alloc::vec![false; w * h],
             w,
             h,
         }
@@ -72,7 +74,7 @@ impl VPU {
     }
 
     pub fn clear(&mut self) {
-        self.data = vec![false; self.w * self.h]
+        self.data = alloc::vec![false; self.w * self.h]
     }
 
     pub fn read(&self, c: (u16, u16)) -> bool {

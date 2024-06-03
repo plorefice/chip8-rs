@@ -1,8 +1,10 @@
+use alloc::vec::Vec;
+
 pub struct Memory(Vec<u8>);
 
 impl Memory {
     pub fn new(sz: u16) -> Memory {
-        Memory(vec![0; sz as usize])
+        Memory(alloc::vec![0; sz as usize])
     }
 
     pub fn load(&mut self, from: u16, data: &[u8]) {
