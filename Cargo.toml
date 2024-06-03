@@ -1,5 +1,19 @@
 [workspace]
-members = [
-    "chip8",
-    "chip8-sdl",
-]
+resolver = "2"
+members = ["chip8", "chip8-esp32", "chip8-sdl"]
+
+[profile.dev.package.chip8-esp32]
+# Rust debug is too slow.
+# For debug builds always builds with some optimization
+opt-level = "s"
+
+[profile.release.package.chip8-esp32]
+codegen-units = 1        # LLVM can perform better optimizations using a single thread
+debug = 2
+debug-assertions = false
+incremental = false
+opt-level = 's'
+overflow-checks = false
+
+[profile.release]
+lto = 'fat'
