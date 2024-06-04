@@ -73,7 +73,12 @@ fn main() -> ! {
         for y in 0..32 {
             for x in 0..64 {
                 if chip8.vpu().read((x, y)) {
-                    display.set_pixel(x.into(), y.into(), 1);
+                    let (x, y) = (x as u32, y as u32);
+
+                    display.set_pixel(x * 2, y * 2, 1);
+                    display.set_pixel(x * 2 + 1, y * 2, 1);
+                    display.set_pixel(x * 2, y * 2 + 1, 1);
+                    display.set_pixel(x * 2 + 1, y * 2 + 1, 1);
                 }
             }
         }
