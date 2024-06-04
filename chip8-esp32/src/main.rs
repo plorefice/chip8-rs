@@ -4,23 +4,26 @@
 use core::mem::MaybeUninit;
 
 use chip8::core::Chip8;
+use embassy_executor::Spawner;
+use embassy_time::{Duration, Ticker};
 use esp_alloc as _;
 use esp_backtrace as _;
 use esp_hal::{
     clock::ClockControl,
-    delay::Delay,
+    embassy,
     gpio::IO,
     peripherals::Peripherals,
     prelude::*,
     spi::{master::Spi, SpiMode},
+    timer::TimerGroup,
 };
 use sh1106::{mode::GraphicsMode, NoOutputPin};
 
 #[global_allocator]
 static ALLOC: esp_alloc::EspHeap = esp_alloc::EspHeap::empty();
 
-#[entry]
-fn main() -> ! {
+#[main]
+async fn main(_spawner: Spawner) {
     const HEAP_SIZE: usize = 32 * 1024;
     static mut HEAP: MaybeUninit<[u8; HEAP_SIZE]> = MaybeUninit::uninit();
     unsafe {
@@ -33,6 +36,9 @@ fn main() -> ! {
     let system = peripherals.SYSTEM.split();
     let clocks = ClockControl::max(system.clock_control).freeze();
 
+    let timg0 = TimerGroup::new_async(peripherals.TIMG0, &clocks);
+    embassy::init(&clocks, timg0);
+
     let io = IO::new(peripherals.GPIO, peripherals.IO_MUX);
     let sclk = io.pins.gpio0;
     let miso = io.pins.gpio2;
@@ -40,7 +46,7 @@ fn main() -> ! {
     let cs = io.pins.gpio5;
     let dc = io.pins.gpio1;
 
-    let spi = Spi::new(peripherals.SPI2, 100.kHz(), SpiMode::Mode0, &clocks).with_pins(
+    let spi = Spi::new(peripherals.SPI2, 1.MHz(), SpiMode::Mode0, &clocks).with_pins(
         Some(sclk),
         Some(mosi),
         Some(miso),
@@ -54,9 +60,11 @@ fn main() -> ! {
     display.init().unwrap();
     display.flush().unwrap();
 
-    let delay = Delay::new(&clocks);
-
     let mut chip8 = Chip8::with_rom(include_bytes!("../../res/roms/TETRIS"));
+
+    log::info!("*** CHIP-8 for ESP32 ***");
+
+    let mut ticker = Ticker::every(Duration::from_micros(16667)); // 60 Hz
 
     loop {
         // Read and update key state
@@ -84,8 +92,6 @@ fn main() -> ! {
         }
         display.flush().unwrap();
 
-        // Wait for 1/60th of a second
-        // TODO: use a periodic timer instead
-        delay.delay_micros(1_000_000 / 60);
+        ticker.next().await;
     }
 }
