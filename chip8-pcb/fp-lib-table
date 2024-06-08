@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "chip8-pcb")(type "KiCad")(uri "${KIPRJMOD}/chip8-pcb.pretty")(options "")(descr ""))
+)

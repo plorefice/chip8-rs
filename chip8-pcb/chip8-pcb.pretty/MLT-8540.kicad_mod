@@ -1,0 +1,295 @@
+(footprint "MLT-8540"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "80dB Externally Driven Magnetic 2.7kHz SMD,8.7x8.7mm Buzzers ROHS")
+	(tags "SMD 8787")
+	(property "Reference" "REF**"
+		(at 0 -6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e6c42c98-f9a1-4d1d-8c50-481f8b8e9197")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MLT-8540"
+		(at 0 -1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c9d466f9-78f0-4c77-878b-f96a9c62d914")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d69a7766-c64e-4008-aa79-624bf022b899")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f9fe648-345e-4331-8501-77058c0919ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "835713a5-5f08-4cb8-9b4b-b65fc2f17c0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.5 2)
+		(end -4.5 -2)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6d161c53-2b83-42f2-bfcf-f7b3a5aad934")
+	)
+	(fp_line
+		(start -2 -4.5)
+		(end 2 -4.5)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "62034fe0-5f31-4976-9594-28166da978c8")
+	)
+	(fp_line
+		(start 2 4.5)
+		(end -2 4.5)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6ce3a186-bf48-4a8f-bdb1-69c30c6cbed2")
+	)
+	(fp_line
+		(start 4.5 -2)
+		(end 4.5 2)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bf761cf8-ecd4-4f76-9440-00f014b3db1b")
+	)
+	(fp_poly
+		(pts
+			(xy 1.3 -1) (xy 1.3 1) (xy 3.3 0)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "83c01820-b38f-4396-b6cc-df19c2afacea")
+	)
+	(fp_line
+		(start -5 -5)
+		(end 5 -5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "3c970648-b1fc-43e2-b651-f7337abe786c")
+	)
+	(fp_line
+		(start -5 5)
+		(end -5 -5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "0097e36e-a535-4f87-af36-5771274f044e")
+	)
+	(fp_line
+		(start 5 -5)
+		(end 5 5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "88851675-7b73-4176-8fee-9207f0a54272")
+	)
+	(fp_line
+		(start 5 5)
+		(end -5 5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "7c5f2650-1832-4a5d-99fb-f0e30c5df1b7")
+	)
+	(fp_line
+		(start -4.25 2.75)
+		(end -4.25 -2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "97fc910c-00bd-4443-8d83-3cb4f7738678")
+	)
+	(fp_line
+		(start -4.25 2.75)
+		(end -2.75 4.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7491459f-74fa-4504-8c9f-89ba0f749aea")
+	)
+	(fp_line
+		(start -2.75 -4.25)
+		(end -4.25 -2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7cdf1972-b72f-46bb-b95b-f4ede85c22a6")
+	)
+	(fp_line
+		(start -2.75 -4.25)
+		(end 2.75 -4.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "b816a015-d163-49d5-8af0-6d9bd83b5dfb")
+	)
+	(fp_line
+		(start 2.75 4.25)
+		(end -2.75 4.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "27eccd3e-ad6f-4cbf-8e38-1e53ee55f327")
+	)
+	(fp_line
+		(start 2.75 4.25)
+		(end 4.25 2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f040fb28-4e49-4138-8f2c-7e4a559d1b36")
+	)
+	(fp_line
+		(start 4.25 -2.75)
+		(end 2.75 -4.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "07a3e60c-3fc5-487d-9b3f-63a0f6f56a41")
+	)
+	(fp_line
+		(start 4.25 -2.75)
+		(end 4.25 2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8bd80f47-375b-41b8-9532-f2a5a013030d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f9891812-36a6-4404-a5c8-668357d49733")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.55 -3.55)
+		(size 2.3 2.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "5d2ba8b9-dd6f-4c71-8668-cb656630e954")
+	)
+	(pad "2" smd rect
+		(at -3.55 3.55)
+		(size 2.3 2.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "40ae62cc-eb5e-41fe-ab54-3a2e2af8c949")
+	)
+	(pad "3" smd rect
+		(at 3.55 3.55)
+		(size 2.3 2.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "9a9e22c3-c73d-48f3-8bdf-67bb413ea222")
+	)
+	(pad "4" smd rect
+		(at 3.55 -3.55 90)
+		(size 2.3 2.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "7af1c787-9ac0-4cfb-8120-e4781c699f83")
+	)
+	(model "${KIPRJMOD}/models/mlt-8540.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.1 0.1 0.1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
