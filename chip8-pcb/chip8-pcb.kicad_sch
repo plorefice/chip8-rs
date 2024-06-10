@@ -5310,7 +5310,7 @@
 		(uuid "2787481e-10a3-4598-8af7-c96da3e0c76d")
 	)
 	(junction
-		(at 142.24 135.89)
+		(at 147.32 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2a5338f5-065c-4986-b6c9-1d795ab278f5")
@@ -5346,7 +5346,7 @@
 		(uuid "692cc375-f407-49a9-b58d-f37afc9eabe7")
 	)
 	(junction
-		(at 142.24 128.27)
+		(at 147.32 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77f32aef-c0a3-4ba5-9a6a-bff53675e642")
@@ -5449,7 +5449,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 123.19) (xy 59.69 123.19)
+			(xy 60.96 137.16) (xy 64.77 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5459,7 +5459,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 130.81) (xy 59.69 130.81)
+			(xy 58.42 144.78) (xy 64.77 144.78)
 		)
 		(stroke
 			(width 0)
@@ -5469,7 +5469,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 135.89) (xy 143.51 134.62)
+			(xy 148.59 149.86) (xy 148.59 148.59)
 		)
 		(stroke
 			(width 0)
@@ -5509,7 +5509,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 135.89) (xy 48.26 135.89)
+			(xy 43.18 149.86) (xy 53.34 149.86)
 		)
 		(stroke
 			(width 0)
@@ -5519,7 +5519,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 129.54) (xy 144.78 129.54)
+			(xy 148.59 143.51) (xy 149.86 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5529,7 +5529,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 130.81) (xy 110.49 130.81)
+			(xy 99.06 144.78) (xy 115.57 144.78)
 		)
 		(stroke
 			(width 0)
@@ -5539,7 +5539,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 128.27) (xy 88.9 128.27)
+			(xy 85.09 142.24) (xy 93.98 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5579,7 +5579,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 135.89) (xy 142.24 138.43)
+			(xy 147.32 149.86) (xy 147.32 152.4)
 		)
 		(stroke
 			(width 0)
@@ -5619,7 +5619,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 138.43) (xy 118.11 118.11)
+			(xy 123.19 152.4) (xy 123.19 132.08)
 		)
 		(stroke
 			(width 0)
@@ -5649,7 +5649,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 138.43) (xy 88.9 138.43)
+			(xy 85.09 152.4) (xy 93.98 152.4)
 		)
 		(stroke
 			(width 0)
@@ -5659,7 +5659,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 133.35) (xy 88.9 133.35)
+			(xy 85.09 147.32) (xy 93.98 147.32)
 		)
 		(stroke
 			(width 0)
@@ -5719,7 +5719,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 143.51) (xy 127 143.51)
+			(xy 85.09 157.48) (xy 132.08 157.48)
 		)
 		(stroke
 			(width 0)
@@ -5769,7 +5769,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 123.19) (xy 102.87 123.19)
+			(xy 99.06 137.16) (xy 107.95 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5819,7 +5819,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 143.51) (xy 48.26 143.51)
+			(xy 43.18 157.48) (xy 53.34 157.48)
 		)
 		(stroke
 			(width 0)
@@ -5839,7 +5839,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 138.43) (xy 48.26 138.43)
+			(xy 43.18 152.4) (xy 53.34 152.4)
 		)
 		(stroke
 			(width 0)
@@ -5899,7 +5899,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 135.89) (xy 88.9 135.89)
+			(xy 85.09 149.86) (xy 93.98 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6019,7 +6019,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 143.51) (xy 134.62 143.51)
+			(xy 137.16 157.48) (xy 139.7 157.48)
 		)
 		(stroke
 			(width 0)
@@ -6039,7 +6039,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 135.89) (xy 115.57 135.89)
+			(xy 99.06 149.86) (xy 120.65 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6059,7 +6059,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 148.59) (xy 142.24 151.13)
+			(xy 147.32 162.56) (xy 147.32 165.1)
 		)
 		(stroke
 			(width 0)
@@ -6079,7 +6079,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 130.81) (xy 48.26 130.81)
+			(xy 43.18 144.78) (xy 53.34 144.78)
 		)
 		(stroke
 			(width 0)
@@ -6089,7 +6089,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 128.27) (xy 107.95 118.11)
+			(xy 113.03 142.24) (xy 113.03 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6109,7 +6109,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 128.27) (xy 143.51 129.54)
+			(xy 148.59 142.24) (xy 148.59 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6119,7 +6119,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 120.65) (xy 55.88 123.19)
+			(xy 60.96 134.62) (xy 60.96 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6139,7 +6139,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 125.73) (xy 105.41 125.73)
+			(xy 99.06 139.7) (xy 110.49 139.7)
 		)
 		(stroke
 			(width 0)
@@ -6149,7 +6149,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 135.89) (xy 142.24 134.62)
+			(xy 147.32 149.86) (xy 147.32 148.59)
 		)
 		(stroke
 			(width 0)
@@ -6169,7 +6169,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 135.89) (xy 115.57 118.11)
+			(xy 120.65 149.86) (xy 120.65 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6179,7 +6179,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 140.97) (xy 120.65 140.97)
+			(xy 99.06 154.94) (xy 125.73 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6189,7 +6189,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 128.27) (xy 107.95 128.27)
+			(xy 99.06 142.24) (xy 113.03 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6199,7 +6199,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 123.19) (xy 102.87 118.11)
+			(xy 107.95 137.16) (xy 107.95 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6229,7 +6229,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 130.81) (xy 110.49 118.11)
+			(xy 115.57 144.78) (xy 115.57 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6249,7 +6249,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 133.35) (xy 48.26 133.35)
+			(xy 43.18 147.32) (xy 53.34 147.32)
 		)
 		(stroke
 			(width 0)
@@ -6319,7 +6319,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 127) (xy 142.24 128.27)
+			(xy 147.32 140.97) (xy 147.32 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6339,7 +6339,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 140.97) (xy 88.9 140.97)
+			(xy 85.09 154.94) (xy 93.98 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6359,7 +6359,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 140.97) (xy 48.26 140.97)
+			(xy 43.18 154.94) (xy 53.34 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6389,7 +6389,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 133.35) (xy 59.69 133.35)
+			(xy 58.42 147.32) (xy 64.77 147.32)
 		)
 		(stroke
 			(width 0)
@@ -6399,7 +6399,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 128.27) (xy 143.51 128.27)
+			(xy 147.32 142.24) (xy 148.59 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6419,7 +6419,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 125.73) (xy 105.41 118.11)
+			(xy 110.49 139.7) (xy 110.49 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6439,7 +6439,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 123.19) (xy 88.9 123.19)
+			(xy 85.09 137.16) (xy 93.98 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6509,7 +6509,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 128.27) (xy 59.69 128.27)
+			(xy 52.07 142.24) (xy 64.77 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6519,7 +6519,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 138.43) (xy 118.11 138.43)
+			(xy 99.06 152.4) (xy 123.19 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6539,7 +6539,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 125.73) (xy 59.69 125.73)
+			(xy 60.96 139.7) (xy 64.77 139.7)
 		)
 		(stroke
 			(width 0)
@@ -6609,7 +6609,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 135.89) (xy 142.24 135.89)
+			(xy 148.59 149.86) (xy 147.32 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6619,7 +6619,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 135.89) (xy 59.69 135.89)
+			(xy 58.42 149.86) (xy 64.77 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6629,7 +6629,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 138.43) (xy 59.69 138.43)
+			(xy 58.42 152.4) (xy 64.77 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6649,7 +6649,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 125.73) (xy 88.9 125.73)
+			(xy 85.09 139.7) (xy 93.98 139.7)
 		)
 		(stroke
 			(width 0)
@@ -6659,7 +6659,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 133.35) (xy 113.03 133.35)
+			(xy 99.06 147.32) (xy 118.11 147.32)
 		)
 		(stroke
 			(width 0)
@@ -6669,7 +6669,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 120.65) (xy 142.24 121.92)
+			(xy 147.32 134.62) (xy 147.32 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6699,7 +6699,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 143.51) (xy 59.69 143.51)
+			(xy 58.42 157.48) (xy 64.77 157.48)
 		)
 		(stroke
 			(width 0)
@@ -6729,7 +6729,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 128.27) (xy 142.24 129.54)
+			(xy 147.32 142.24) (xy 147.32 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6789,7 +6789,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 140.97) (xy 59.69 140.97)
+			(xy 58.42 154.94) (xy 64.77 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6839,7 +6839,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 120.65) (xy 46.99 128.27)
+			(xy 52.07 134.62) (xy 52.07 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6879,7 +6879,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 140.97) (xy 120.65 118.11)
+			(xy 125.73 154.94) (xy 125.73 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6939,7 +6939,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 134.62) (xy 144.78 134.62)
+			(xy 148.59 148.59) (xy 149.86 148.59)
 		)
 		(stroke
 			(width 0)
@@ -6949,7 +6949,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 133.35) (xy 113.03 118.11)
+			(xy 118.11 147.32) (xy 118.11 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6999,7 +6999,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 130.81) (xy 88.9 130.81)
+			(xy 85.09 144.78) (xy 93.98 144.78)
 		)
 		(stroke
 			(width 0)
@@ -7047,9 +7047,9 @@
 		)
 		(uuid "f99a5ba4-201c-49e9-b1e7-19b3f893fcef")
 	)
-	(text "PCB (4x M2.5)\n"
+	(text "PCB (3x M2.5)\n"
 		(exclude_from_sim no)
-		(at 118.364 165.1 0)
+		(at 216.916 141.478 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7059,7 +7059,7 @@
 	)
 	(text "IMPORTANT! Remove 3.3V LDO\nfrom ESP32-C3-ZERO board"
 		(exclude_from_sim no)
-		(at 49.784 110.49 0)
+		(at 54.864 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7078,26 +7078,6 @@
 		)
 		(uuid "49d48233-4eed-4fb5-8a32-803ebea92d7c")
 	)
-	(text "Keypad (4x M2)\n"
-		(exclude_from_sim no)
-		(at 81.534 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "aed1f4be-99a2-4827-bd97-f8aea70988a9")
-	)
-	(text "Display (4x M2.5)\n"
-		(exclude_from_sim no)
-		(at 45.974 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "aff16dcb-7824-4546-9f62-9a28d2456814")
-	)
 	(label "LCD_RST"
 		(at 193.04 101.6 180)
 		(fields_autoplaced yes)
@@ -7111,7 +7091,7 @@
 	)
 	(global_label "MOSI"
 		(shape output)
-		(at 38.1 140.97 180)
+		(at 43.18 154.94 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7121,7 +7101,7 @@
 		)
 		(uuid "2c8415de-a0e8-48b0-9c4c-09eeb5a45d43")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.5186 140.97 0)
+			(at 35.5986 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7155,7 +7135,7 @@
 	)
 	(global_label "MISO"
 		(shape input)
-		(at 38.1 135.89 180)
+		(at 43.18 149.86 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7165,7 +7145,7 @@
 		)
 		(uuid "69cd7940-d3c0-48f8-b750-1840a92b55a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.5186 135.89 0)
+			(at 35.5986 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7243,7 +7223,7 @@
 	)
 	(global_label "LCD_DC"
 		(shape output)
-		(at 38.1 133.35 180)
+		(at 43.18 147.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7253,7 +7233,7 @@
 		)
 		(uuid "a37a132e-d1ed-44b5-a3b7-7919acc11131")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.0391 133.35 0)
+			(at 33.1191 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7265,7 +7245,7 @@
 	)
 	(global_label "LCD_CS"
 		(shape output)
-		(at 38.1 143.51 180)
+		(at 43.18 157.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7275,7 +7255,7 @@
 		)
 		(uuid "a452544c-ca43-42bb-892e-4325f3e9de31")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.0996 143.51 0)
+			(at 33.1796 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7309,7 +7289,7 @@
 	)
 	(global_label "WS25_CS"
 		(shape output)
-		(at 38.1 138.43 180)
+		(at 43.18 152.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7319,7 +7299,7 @@
 		)
 		(uuid "c5911215-b49a-47cb-b6a8-f901fce5ea2a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.5878 138.43 0)
+			(at 31.6678 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7375,7 +7355,7 @@
 	)
 	(global_label "SCLK"
 		(shape output)
-		(at 38.1 130.81 180)
+		(at 43.18 144.78 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7385,7 +7365,7 @@
 		)
 		(uuid "e684a10e-37d9-418a-8020-75be80ae51e8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.3372 130.81 0)
+			(at 35.4172 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7574,78 +7554,6 @@
 			(project ""
 				(path "/0359bf31-76dd-402b-90af-68293131dae7"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 86.36 177.8 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ab28e7f-a485-484d-b768-0f8f581c623e")
-		(property "Reference" "H8"
-			(at 89.408 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 88.9 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 86.36 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 86.36 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 86.36 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "chip8-pcb"
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -8032,7 +7940,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 142.24 132.08 0)
+		(at 147.32 146.05 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8041,7 +7949,7 @@
 		(dnp no)
 		(uuid "138e85ab-80db-47fc-b919-2648df210234")
 		(property "Reference" "R14"
-			(at 135.89 130.81 0)
+			(at 140.97 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8050,7 +7958,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 135.89 133.35 0)
+			(at 140.97 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8059,7 +7967,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 142.24 132.08 0)
+			(at 147.32 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8068,7 +7976,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 132.08 0)
+			(at 147.32 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8077,7 +7985,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 142.24 132.08 0)
+			(at 147.32 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8086,7 +7994,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C21190"
-			(at 142.24 132.08 0)
+			(at 147.32 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8111,7 +8019,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 142.24 120.65 0)
+		(at 147.32 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8120,7 +8028,7 @@
 		(fields_autoplaced yes)
 		(uuid "17dc8c4c-e477-4d08-89de-57eb34b44bcb")
 		(property "Reference" "#PWR018"
-			(at 142.24 124.46 0)
+			(at 147.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8129,7 +8037,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 142.24 115.57 0)
+			(at 147.32 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8137,7 +8045,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 120.65 0)
+			(at 147.32 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8146,7 +8054,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 120.65 0)
+			(at 147.32 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8155,7 +8063,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 142.24 120.65 0)
+			(at 147.32 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8520,7 +8428,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 130.81 90)
+		(at 96.52 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8528,7 +8436,7 @@
 		(dnp no)
 		(uuid "25b99b57-0358-4416-9d22-431c6724fdde")
 		(property "Reference" "R7"
-			(at 86.6687 129.54 90)
+			(at 91.7487 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8536,7 +8444,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 96.3207 129.54 90)
+			(at 101.4007 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8544,7 +8452,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 130.81 0)
+			(at 96.52 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8553,7 +8461,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 130.81 0)
+			(at 96.52 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8562,7 +8470,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 130.81 0)
+			(at 96.52 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8571,7 +8479,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 91.44 130.81 0)
+			(at 96.52 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8726,7 +8634,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 50.8 138.43 90)
+		(at 55.88 152.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8734,7 +8642,7 @@
 		(dnp no)
 		(uuid "26e4aa15-6b82-4763-b525-c7e520062ab3")
 		(property "Reference" "R20"
-			(at 46.0287 137.16 90)
+			(at 51.1087 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8742,7 +8650,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 55.6807 137.16 90)
+			(at 60.7607 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8750,7 +8658,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 138.43 0)
+			(at 55.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8759,7 +8667,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 138.43 0)
+			(at 55.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8768,7 +8676,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 50.8 138.43 0)
+			(at 55.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8777,7 +8685,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 50.8 138.43 0)
+			(at 55.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8802,7 +8710,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 50.8 133.35 90)
+		(at 55.88 147.32 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8810,7 +8718,7 @@
 		(dnp no)
 		(uuid "29a98a8e-8e1f-4715-b524-78a7ed27a996")
 		(property "Reference" "R17"
-			(at 46.0287 132.08 90)
+			(at 51.1087 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8818,7 +8726,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 55.6807 132.08 90)
+			(at 60.7607 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8826,7 +8734,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 133.35 0)
+			(at 55.88 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8835,7 +8743,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 133.35 0)
+			(at 55.88 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8844,7 +8752,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 50.8 133.35 0)
+			(at 55.88 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8853,7 +8761,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 50.8 133.35 0)
+			(at 55.88 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8943,7 +8851,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 151.13 0)
+		(at 147.32 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8952,7 +8860,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f120a6c-a8f1-44b2-baa3-1158af718f7d")
 		(property "Reference" "#PWR019"
-			(at 142.24 157.48 0)
+			(at 147.32 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8961,7 +8869,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 156.21 0)
+			(at 147.32 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8969,7 +8877,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 151.13 0)
+			(at 147.32 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8978,7 +8886,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 151.13 0)
+			(at 147.32 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8987,7 +8895,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 151.13 0)
+			(at 147.32 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9756,7 +9664,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 140.97 90)
+		(at 96.52 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9764,7 +9672,7 @@
 		(dnp no)
 		(uuid "3d8102c5-940c-4c0c-a793-1a2b3500bd6e")
 		(property "Reference" "R11"
-			(at 86.6687 139.7 90)
+			(at 91.7487 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9772,7 +9680,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 96.3207 139.7 90)
+			(at 101.4007 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9780,7 +9688,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 140.97 0)
+			(at 96.52 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9789,7 +9697,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 140.97 0)
+			(at 96.52 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9798,7 +9706,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 140.97 0)
+			(at 96.52 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9807,7 +9715,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 91.44 140.97 0)
+			(at 96.52 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9832,7 +9740,7 @@
 	)
 	(symbol
 		(lib_id "chip8-pcb:ESP32-C3-ZERO")
-		(at 69.85 133.35 0)
+		(at 74.93 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9840,7 +9748,7 @@
 		(dnp no)
 		(uuid "406c9e38-bbb9-4b72-ae57-baef3baa55f3")
 		(property "Reference" "U4"
-			(at 75.692 118.872 0)
+			(at 80.772 132.842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9848,7 +9756,7 @@
 			)
 		)
 		(property "Value" "ESP32-C3-ZERO"
-			(at 69.85 148.082 0)
+			(at 74.93 162.052 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9856,7 +9764,7 @@
 			)
 		)
 		(property "Footprint" "chip8-pcb:WaveShare_ESP32-C3-ZERO"
-			(at 69.85 133.35 0)
+			(at 74.93 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9865,7 +9773,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 133.35 0)
+			(at 74.93 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9874,7 +9782,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 69.85 133.35 0)
+			(at 74.93 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9883,7 +9791,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 69.85 133.35 0)
+			(at 74.93 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10028,6 +9936,78 @@
 			(project "chip8-pcb"
 				(path "/0359bf31-76dd-402b-90af-68293131dae7"
 					(reference "JP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 210.82 147.32 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "42230e63-6f33-4952-b8e0-679a9ef29b8a")
+		(property "Reference" "H9"
+			(at 213.868 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 213.36 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 210.82 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 210.82 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" ""
+			(at 210.82 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "chip8-pcb"
+				(path "/0359bf31-76dd-402b-90af-68293131dae7"
+					(reference "H9")
 					(unit 1)
 				)
 			)
@@ -10183,7 +10163,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 129.54 143.51 90)
+		(at 134.62 157.48 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10192,7 +10172,7 @@
 		(fields_autoplaced yes)
 		(uuid "4dbf8f7f-51f3-43b8-9ab1-7e53c6d1da6e")
 		(property "Reference" "R12"
-			(at 129.54 138.43 90)
+			(at 134.62 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10200,7 +10180,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 129.54 140.97 90)
+			(at 134.62 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10208,7 +10188,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 129.54 143.51 0)
+			(at 134.62 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10217,7 +10197,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 143.51 0)
+			(at 134.62 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10226,7 +10206,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 129.54 143.51 0)
+			(at 134.62 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10235,7 +10215,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23179"
-			(at 129.54 143.51 0)
+			(at 134.62 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10260,7 +10240,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 125.73 90)
+		(at 96.52 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10268,7 +10248,7 @@
 		(dnp no)
 		(uuid "4ec5a72e-26d0-4a61-93d6-2994a3bca77a")
 		(property "Reference" "R4"
-			(at 86.6687 124.46 90)
+			(at 91.7487 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10276,7 +10256,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 96.3207 124.46 90)
+			(at 101.4007 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10284,7 +10264,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 125.73 0)
+			(at 96.52 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10293,7 +10273,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 125.73 0)
+			(at 96.52 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10302,7 +10282,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 125.73 0)
+			(at 96.52 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10311,7 +10291,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 91.44 125.73 0)
+			(at 96.52 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10336,7 +10316,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 142.24 124.46 0)
+		(at 147.32 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10345,7 +10325,7 @@
 		(fields_autoplaced yes)
 		(uuid "50514225-47c6-466c-b32c-90fee4cd074d")
 		(property "Reference" "R13"
-			(at 144.78 123.1899 0)
+			(at 149.86 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10354,7 +10334,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 144.78 125.7299 0)
+			(at 149.86 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10363,7 +10343,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 142.24 124.46 0)
+			(at 147.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10372,7 +10352,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 124.46 0)
+			(at 147.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10381,7 +10361,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 142.24 124.46 0)
+			(at 147.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10390,7 +10370,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C21189"
-			(at 142.24 124.46 0)
+			(at 147.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10415,7 +10395,7 @@
 	)
 	(symbol
 		(lib_id "chip8-pcb:Keypad_4x4")
-		(at 111.76 101.6 0)
+		(at 116.84 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10423,7 +10403,7 @@
 		(dnp no)
 		(uuid "519633e1-df1f-4be6-ac09-2bf47fcb5a30")
 		(property "Reference" "J4"
-			(at 99.314 85.344 0)
+			(at 104.394 99.314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10432,7 +10412,7 @@
 			)
 		)
 		(property "Value" "Matrix Keypad"
-			(at 99.314 87.63 0)
+			(at 104.394 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10440,8 +10420,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "chip8-pcb:AZDelivery_Keypad_4x4_Matrix_P2.54mm"
-			(at 111.76 101.6 0)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Horizontal"
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10450,7 +10430,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 101.6 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10459,7 +10439,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 111.76 101.6 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10468,7 +10448,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 111.76 101.6 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10510,78 +10490,6 @@
 			(project ""
 				(path "/0359bf31-76dd-402b-90af-68293131dae7"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 50.8 170.18 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "5257fedd-5585-4940-a93d-c1be0f585f05")
-		(property "Reference" "H2"
-			(at 53.848 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 53.34 171.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 50.8 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 50.8 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 50.8 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "chip8-pcb"
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -10655,7 +10563,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 128.27 90)
+		(at 96.52 142.24 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10663,7 +10571,7 @@
 		(dnp no)
 		(uuid "5d707f37-1f73-412d-8e8d-3f023179cafc")
 		(property "Reference" "R6"
-			(at 86.6687 127 90)
+			(at 91.7487 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10671,7 +10579,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 96.3207 127 90)
+			(at 101.4007 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10679,7 +10587,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 128.27 0)
+			(at 96.52 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10688,7 +10596,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 128.27 0)
+			(at 96.52 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10697,7 +10605,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 128.27 0)
+			(at 96.52 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10706,7 +10614,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 91.44 128.27 0)
+			(at 96.52 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10973,80 +10881,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 113.03 170.18 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "671b4d6b-0722-41f6-bcc2-3701af71dcd6")
-		(property "Reference" "H9"
-			(at 116.078 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 115.57 171.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 113.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 113.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 113.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "chip8-pcb"
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 135.89 90)
+		(at 96.52 149.86 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11054,7 +10890,7 @@
 		(dnp no)
 		(uuid "675704bc-504b-446e-a859-8b2be4f929c9")
 		(property "Reference" "R9"
-			(at 86.6687 134.62 90)
+			(at 91.7487 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11062,7 +10898,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 96.3207 134.62 90)
+			(at 101.4007 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11070,7 +10906,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 135.89 0)
+			(at 96.52 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11079,7 +10915,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 135.89 0)
+			(at 96.52 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11088,7 +10924,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 135.89 0)
+			(at 96.52 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11097,7 +10933,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 91.44 135.89 0)
+			(at 96.52 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11200,7 +11036,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 46.99 120.65 0)
+		(at 52.07 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11208,7 +11044,7 @@
 		(dnp no)
 		(uuid "6a5b97bc-b81d-4759-8783-ea7966a08986")
 		(property "Reference" "#PWR03"
-			(at 46.99 124.46 0)
+			(at 52.07 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11217,7 +11053,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 46.99 116.84 0)
+			(at 52.07 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11225,7 +11061,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 120.65 0)
+			(at 52.07 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11234,7 +11070,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 120.65 0)
+			(at 52.07 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11243,7 +11079,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 46.99 120.65 0)
+			(at 52.07 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11402,78 +11238,6 @@
 			(project "chip8-pcb"
 				(path "/0359bf31-76dd-402b-90af-68293131dae7"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 76.2 170.18 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "70444b6c-8846-480e-a3a6-40b57357f2c8")
-		(property "Reference" "H5"
-			(at 79.248 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 78.74 171.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 76.2 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 76.2 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 76.2 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "chip8-pcb"
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -11703,80 +11467,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 86.36 170.18 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "8098f34c-8504-403d-85e8-725c33dcc9d2")
-		(property "Reference" "H7"
-			(at 89.408 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 88.9 171.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 86.36 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 86.36 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 86.36 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "chip8-pcb"
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
-		(at 50.8 130.81 90)
+		(at 55.88 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11784,7 +11476,7 @@
 		(dnp no)
 		(uuid "81da5259-47af-4cd6-b8d7-7f8c37645a13")
 		(property "Reference" "R18"
-			(at 45.974 129.54 90)
+			(at 51.054 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11792,7 +11484,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 55.626 129.54 90)
+			(at 60.706 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11800,7 +11492,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 130.81 0)
+			(at 55.88 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11809,7 +11501,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 130.81 0)
+			(at 55.88 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11818,7 +11510,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 50.8 130.81 0)
+			(at 55.88 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11827,7 +11519,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 50.8 130.81 0)
+			(at 55.88 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11984,7 +11676,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 123.19 90)
+		(at 96.52 137.16 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11992,7 +11684,7 @@
 		(dnp no)
 		(uuid "91c44c57-d55c-4410-9aa7-e23d5790aee9")
 		(property "Reference" "R5"
-			(at 86.614 121.92 90)
+			(at 91.694 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12000,7 +11692,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 96.266 121.92 90)
+			(at 101.346 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12008,7 +11700,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 123.19 0)
+			(at 96.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12017,7 +11709,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 123.19 0)
+			(at 96.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12026,7 +11718,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 123.19 0)
+			(at 96.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12035,7 +11727,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 91.44 123.19 0)
+			(at 96.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12125,7 +11817,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 123.19 177.8 0)
+		(at 222.25 156.21 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -12133,7 +11825,7 @@
 		(dnp no)
 		(uuid "966a4b38-1365-4d31-b47e-4b3ec8b03a0a")
 		(property "Reference" "H12"
-			(at 126.238 177.8 0)
+			(at 225.298 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12142,7 +11834,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 125.73 179.0699 0)
+			(at 224.79 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12150,8 +11842,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 123.19 177.8 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 222.25 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12160,7 +11852,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 177.8 0)
+			(at 222.25 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12169,7 +11861,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 123.19 177.8 0)
+			(at 222.25 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12178,7 +11870,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 123.19 177.8 0)
+			(at 222.25 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12642,80 +12334,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 50.8 177.8 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9122272-b18b-4215-89cf-8887d0b7a9ed")
-		(property "Reference" "H4"
-			(at 53.848 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 53.34 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 50.8 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 50.8 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 50.8 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "chip8-pcb"
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 55.88 125.73 270)
+		(at 60.96 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12723,7 +12343,7 @@
 		(dnp no)
 		(uuid "aa613dad-3281-4a32-9142-54c393454a50")
 		(property "Reference" "#PWR07"
-			(at 49.53 125.73 0)
+			(at 54.61 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12732,7 +12352,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.086 124.46 90)
+			(at 58.166 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12741,7 +12361,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 125.73 0)
+			(at 60.96 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12750,7 +12370,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 125.73 0)
+			(at 60.96 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12759,7 +12379,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 125.73 0)
+			(at 60.96 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12873,7 +12493,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 50.8 140.97 90)
+		(at 55.88 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12881,7 +12501,7 @@
 		(dnp no)
 		(uuid "adc9d3a4-ab0c-4c06-be3c-ba29c64e3263")
 		(property "Reference" "R21"
-			(at 46.0287 139.7 90)
+			(at 51.1087 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12889,7 +12509,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 55.6807 139.7 90)
+			(at 60.7607 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12897,7 +12517,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 140.97 0)
+			(at 55.88 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12906,7 +12526,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 140.97 0)
+			(at 55.88 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12915,7 +12535,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 50.8 140.97 0)
+			(at 55.88 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12924,7 +12544,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 50.8 140.97 0)
+			(at 55.88 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13008,78 +12628,6 @@
 			(project "chip8-pcb"
 				(path "/0359bf31-76dd-402b-90af-68293131dae7"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 40.64 170.18 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "b084b47d-95c4-44fc-ac30-27880c57e4db")
-		(property "Reference" "H1"
-			(at 43.688 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 43.18 171.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 40.64 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 40.64 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 40.64 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -13217,7 +12765,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 50.8 135.89 90)
+		(at 55.88 149.86 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13225,7 +12773,7 @@
 		(dnp no)
 		(uuid "b44f1688-09a7-4422-854f-334063613227")
 		(property "Reference" "R19"
-			(at 46.0287 134.62 90)
+			(at 51.1087 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13233,7 +12781,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 55.6807 134.62 90)
+			(at 60.7607 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13241,7 +12789,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 135.89 0)
+			(at 55.88 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13250,7 +12798,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 135.89 0)
+			(at 55.88 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13259,7 +12807,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 50.8 135.89 0)
+			(at 55.88 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13268,7 +12816,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 50.8 135.89 0)
+			(at 55.88 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13358,7 +12906,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 50.8 143.51 90)
+		(at 55.88 157.48 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13366,7 +12914,7 @@
 		(dnp no)
 		(uuid "bc78dccd-d369-40d3-9add-018159953cfc")
 		(property "Reference" "R22"
-			(at 46.0287 142.24 90)
+			(at 51.1087 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13374,7 +12922,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 55.6807 142.24 90)
+			(at 60.7607 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13382,7 +12930,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 143.51 0)
+			(at 55.88 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13391,7 +12939,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 143.51 0)
+			(at 55.88 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13400,7 +12948,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 50.8 143.51 0)
+			(at 55.88 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13409,7 +12957,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 50.8 143.51 0)
+			(at 55.88 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13433,80 +12981,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 40.64 177.8 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "bcad5e8c-f963-4320-a9ab-25f79e05dd8e")
-		(property "Reference" "H3"
-			(at 43.688 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 43.18 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "chip8-pcb"
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "chip8-pcb:Buzzer_4P")
-		(at 147.32 132.08 0)
+		(at 152.4 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13515,7 +12991,7 @@
 		(fields_autoplaced yes)
 		(uuid "bfa8530f-412d-4efd-9c90-16d0eeb51f9f")
 		(property "Reference" "BZ1"
-			(at 151.13 131.1274 0)
+			(at 156.21 145.0974 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13524,7 +13000,7 @@
 			)
 		)
 		(property "Value" "MLT-8540"
-			(at 151.13 133.6674 0)
+			(at 156.21 147.6374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13533,7 +13009,7 @@
 			)
 		)
 		(property "Footprint" "chip8-pcb:MLT-8540"
-			(at 146.685 129.54 90)
+			(at 151.765 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13542,7 +13018,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.685 129.54 90)
+			(at 151.765 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13551,7 +13027,7 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized, with 2 additional mounting pins"
-			(at 147.32 132.08 0)
+			(at 152.4 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13560,7 +13036,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C95300"
-			(at 147.32 132.08 0)
+			(at 152.4 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13591,7 +13067,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 139.7 143.51 0)
+		(at 144.78 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13600,7 +13076,7 @@
 		(fields_autoplaced yes)
 		(uuid "c00ab088-e7dc-4086-86c8-40b1f5fbdd69")
 		(property "Reference" "Q1"
-			(at 144.78 142.2399 0)
+			(at 149.86 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13609,7 +13085,7 @@
 			)
 		)
 		(property "Value" "S8050"
-			(at 144.78 144.7799 0)
+			(at 149.86 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13618,7 +13094,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 144.78 145.415 0)
+			(at 149.86 159.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13629,7 +13105,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 139.7 143.51 0)
+			(at 144.78 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13639,7 +13115,7 @@
 			)
 		)
 		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 139.7 143.51 0)
+			(at 144.78 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13648,7 +13124,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C2146"
-			(at 139.7 143.51 0)
+			(at 144.78 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13819,7 +13295,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 55.88 120.65 0)
+		(at 60.96 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13827,7 +13303,7 @@
 		(dnp no)
 		(uuid "cc6a19c4-4de7-46d9-81f6-fb8cab33e3ba")
 		(property "Reference" "#PWR05"
-			(at 55.88 124.46 0)
+			(at 60.96 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13836,7 +13312,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 57.15 116.84 0)
+			(at 62.23 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13844,7 +13320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 120.65 0)
+			(at 60.96 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13853,7 +13329,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 120.65 0)
+			(at 60.96 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13862,7 +13338,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 55.88 120.65 0)
+			(at 60.96 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14105,7 +13581,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 113.03 177.8 0)
+		(at 222.25 147.32 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -14113,7 +13589,7 @@
 		(dnp no)
 		(uuid "d7173c5d-1e53-4d85-8292-dd4cac131269")
 		(property "Reference" "H10"
-			(at 116.078 177.8 0)
+			(at 225.298 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14122,7 +13598,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 115.57 179.0699 0)
+			(at 224.79 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14130,8 +13606,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 113.03 177.8 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 222.25 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14140,7 +13616,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 177.8 0)
+			(at 222.25 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14149,7 +13625,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 113.03 177.8 0)
+			(at 222.25 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14158,7 +13634,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 113.03 177.8 0)
+			(at 222.25 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14256,7 +13732,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 123.19 170.18 0)
+		(at 210.82 156.21 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -14264,7 +13740,7 @@
 		(dnp no)
 		(uuid "ddf80446-1820-44c8-9d6e-38d86a6048af")
 		(property "Reference" "H11"
-			(at 126.238 170.18 0)
+			(at 213.868 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14273,7 +13749,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 125.73 171.4499 0)
+			(at 213.36 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14281,8 +13757,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 123.19 170.18 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 210.82 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14291,7 +13767,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 170.18 0)
+			(at 210.82 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14300,7 +13776,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 123.19 170.18 0)
+			(at 210.82 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14309,7 +13785,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 123.19 170.18 0)
+			(at 210.82 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14328,7 +13804,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 138.43 90)
+		(at 96.52 152.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14336,7 +13812,7 @@
 		(dnp no)
 		(uuid "e077ada7-1661-4343-962c-601e065ce4b9")
 		(property "Reference" "R10"
-			(at 86.6687 137.16 90)
+			(at 91.7487 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14344,7 +13820,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 96.3207 137.16 90)
+			(at 101.4007 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14352,7 +13828,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 138.43 0)
+			(at 96.52 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14361,7 +13837,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 138.43 0)
+			(at 96.52 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14370,7 +13846,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 138.43 0)
+			(at 96.52 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14379,7 +13855,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 91.44 138.43 0)
+			(at 96.52 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14782,7 +14258,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 133.35 90)
+		(at 96.52 147.32 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14790,7 +14266,7 @@
 		(dnp no)
 		(uuid "f6ba334d-64b9-4548-b700-9a4b9b3b1743")
 		(property "Reference" "R8"
-			(at 86.6687 132.08 90)
+			(at 91.7487 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14798,7 +14274,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 96.3207 132.08 90)
+			(at 101.4007 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14806,7 +14282,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 133.35 0)
+			(at 96.52 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14815,7 +14291,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 133.35 0)
+			(at 96.52 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14824,7 +14300,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 133.35 0)
+			(at 96.52 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14833,7 +14309,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C23345"
-			(at 91.44 133.35 0)
+			(at 96.52 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14851,78 +14327,6 @@
 			(project "chip8-pcb"
 				(path "/0359bf31-76dd-402b-90af-68293131dae7"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 76.2 177.8 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "f916efc2-5e23-4319-b9fd-c7a9a092920f")
-		(property "Reference" "H6"
-			(at 79.248 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 78.74 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 76.2 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 76.2 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 76.2 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "chip8-pcb"
-				(path "/0359bf31-76dd-402b-90af-68293131dae7"
-					(reference "H6")
 					(unit 1)
 				)
 			)

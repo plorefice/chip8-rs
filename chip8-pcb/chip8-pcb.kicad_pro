@@ -58,14 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "courtyards_overlap|110208578|155478916|2bd1c3e4-6184-4751-b3b4-40bc13257ef5|52b452be-d38d-4318-9f02-55776a5a2455",
-        "courtyards_overlap|110308578|95478916|27407b91-883c-4dd2-9a0b-4d83a6786110|52b452be-d38d-4318-9f02-55776a5a2455",
-        "courtyards_overlap|112399386|166374999|13577ab3-3961-45d6-90de-bf278e7f00de|52b452be-d38d-4318-9f02-55776a5a2455",
-        "courtyards_overlap|46000001|162222621|52b452be-d38d-4318-9f02-55776a5a2455|c9a0ad1e-af38-4660-a1f1-dbb1832342e3",
-        "courtyards_overlap|48908578|155478916|0ff79884-4e07-47b5-a315-c938db8cecbe|52b452be-d38d-4318-9f02-55776a5a2455",
-        "courtyards_overlap|48908578|95478916|52b452be-d38d-4318-9f02-55776a5a2455|d51aca4a-d437-4909-8041-73f8d6a4c562"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -573,8 +566,8 @@
       "+5V": "rgb(255, 153, 0)",
       "+BATT": "rgb(0, 255, 0)",
       "GND": "rgb(0, 0, 255)",
-      "Net-(U1-VCC)": "rgb(255, 0, 0)",
-      "VBUS": "rgb(255, 0, 0)"
+      "Net-(U1-VCC)": "rgb(255, 0, 255)",
+      "VBUS": "rgb(255, 0, 255)"
     },
     "netclass_assignments": null,
     "netclass_patterns": []
