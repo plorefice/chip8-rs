@@ -4183,42 +4183,6 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -11.43 -16.51 90)
-					(length 2.54) hide
-					(name "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 11.43 -16.51 90)
-					(length 2.54) hide
-					(name "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -8.89 -16.51 90)
 					(length 2.54)
@@ -4229,7 +4193,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4247,7 +4211,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4265,7 +4229,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4283,7 +4247,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4301,7 +4265,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4319,7 +4283,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4337,7 +4301,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4355,7 +4319,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10420,7 +10384,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Horizontal"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Horizontal"
 			(at 116.84 115.57 0)
 			(effects
 				(font
@@ -10479,12 +10443,6 @@
 		)
 		(pin "7"
 			(uuid "cba7f1c5-2346-4ba5-b3a8-11e79cacd8f3")
-		)
-		(pin "10"
-			(uuid "3f0d6c01-5977-40be-8f1c-ab6b9679d70e")
-		)
-		(pin "9"
-			(uuid "9df51ba8-49ef-4a01-abf9-94004528bd53")
 		)
 		(instances
 			(project ""

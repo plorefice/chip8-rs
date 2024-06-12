@@ -580,7 +580,7 @@
       "plot": "plots/",
       "pos_files": "assembly/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "chip8-pcb.step",
       "svg": "",
       "vrml": ""
     },
